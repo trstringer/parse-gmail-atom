@@ -2,10 +2,18 @@
 
 *Simple command line app that parses the Atom XML feed for Gmail emails*
 
+## Installation
+
+```
+npm install --global parse-gmail-atom
+```
+
 ## Usage
 
 ```
-$ curl ... | pgmail
+$ USERNAME="you@gmail.com"
+$ PASSWORD="password"
+$ curl -u $USERNAME:$PASSWORD --silent "https://mail.google.com/mail/feed/atom" | pgmail
 ```
 
 ## Output
